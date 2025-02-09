@@ -22,18 +22,31 @@ const Gatekeeper: React.FC<GatekeeperProps> = ({ nextScene }) => {
         }
     };
 
-    const backgroundStyle = {
+    // const backgroundStyle = {
+    //     backgroundImage: 'url(/corridor.png)',
+    //     backgroundSize: 'cover',
+    //     backgroundPosition: 'center',
+    //     width: '100vw',
+    //     height: '100vh',
+    //     display: 'flex',
+    //     flexDirection: 'column',
+    //     justifyContent: 'center',
+    //     alignItems: 'center',
+    //     textAlign: 'center',
+    // };
+    const backgroundStyle: React.CSSProperties = {
         backgroundImage: 'url(/corridor.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         width: '100vw',
         height: '100vh',
         display: 'flex',
-        flexDirection: 'column',
+        flexDirection: 'column' as const, // Explicitly specify type
         justifyContent: 'center',
         alignItems: 'center',
         textAlign: 'center',
     };
+    
 
     return (
         <div className="absolute inset-0" style={backgroundStyle}>
