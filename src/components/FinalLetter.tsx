@@ -1,8 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
-
 type FinalLetterProps = {
     nextScene: () => void;
 };

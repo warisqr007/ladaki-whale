@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 type GatekeeperProps = {
     nextScene: () => void;
